@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: store-locator-service
+  profiles:
+    active: dev
+    
+server:
+  servlet:
+    context-path: /store-locator-service
+  port: 5001
+---
+
+spring:  
+  profiles: prod
+  data:
+    mongodb:
+     uri: mongodb+srv://jumbo-admin:jumbo-admin@cluster0-yvxat.mongodb.net/test?ssl=true&serverSelectionTimeoutMS=90000&connectTimeoutMS=90000&authSource=admin&retryWrites=true
+     database: stores    
+---
+
+spring:  
+  profiles: dev
+  data:
+    mongodb:
+     uri: mongodb+srv://jumbo-admin:jumbo-admin@cluster0-yvxat.mongodb.net/test?ssl=true&serverSelectionTimeoutMS=90000&connectTimeoutMS=90000&authSource=admin&retryWrites=true
+     database: stores    

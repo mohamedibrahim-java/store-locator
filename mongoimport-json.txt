@@ -1,0 +1,1 @@
+mongoimport --host cluster0-shard-00-01-yvxat.mongodb.net:27017 --db stores --collection STORE --file /Users/mohamedsalem/projects/store-locator/stores.json --jsonArray --authenticationDatabase admin --ssl --username jumbo-admin --password jumbo-admin
