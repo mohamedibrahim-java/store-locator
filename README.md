@@ -41,6 +41,16 @@ Purpose: retrieve store details and register/update store data.
 <img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-model.png" width="800">
 </p>
 
+# **Application Overview**
+
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-allow.png" width="800">
+</p>
+
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-find.png" width="800">
+</p>
+
 # **DevOps Overview**
 
 One of the vital practices in software development lifecycle is DevOps which is mainly designed to building and delivering software products in a more rapidly and reliability fashion.
