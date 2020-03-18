@@ -22,14 +22,14 @@ before_install:
 script: 
     
     - cd store-locator-ui
-    - docker build -t $DOCKER_USERNAME/store-locator:store-locator-ui_$TRAVIS_BUILD_ID .
-    - docker push $DOCKER_USERNAME/store-locator:store-locator-ui_$TRAVIS_BUILD_ID
+    - docker build -t $DOCKER_USERNAME/store-locator:store-locator-ui .
+    - docker push $DOCKER_USERNAME/store-locator:store-locator-ui
 
     - cd ../store-locator
     - mvn clean install -DskipTests -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
     #- sonar-scanner
-    - docker build -t $DOCKER_USERNAME/store-locator:$TRAVIS_BUILD_ID .
-    - docker push $DOCKER_USERNAME/store-locator:$TRAVIS_BUILD_ID
+    - docker build -t $DOCKER_USERNAME/store-locator:store-locator-service .
+    - docker push $DOCKER_USERNAME/store-locator:store-locator-service
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
