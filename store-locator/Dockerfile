@@ -11,4 +11,4 @@ COPY ${JAR_FILE} $PROJECT_HOME/app.jar
 
 WORKDIR $PROJECT_HOME
 
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","./app.jar","automotive-customer"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","./app.jar","store-locator"]
