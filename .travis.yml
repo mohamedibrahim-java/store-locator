@@ -1,0 +1,44 @@
+sudo: required
+language: java
+jdk: openjdk8
+install: true
+
+cache:
+  directories:
+  - "$HOME/.cache"
+addons:
+  sonarcloud:
+    organization: "mohamedibrahim-java" # the key of the org you chose at step #3
+    token:
+      secure: 715dca25726f4340538724bcddc2b4ab24fffbce
+        # ZKU2Ure1whSVltqH7uETBw # encrypted value of your token
+      
+services:
+  - docker
+
+before_install:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  
+script: 
+    
+    # - cd store-locator-ui
+    # - docker build -t $DOCKER_USERNAME/automotive-ui:$TRAVIS_BUILD_ID .
+    # - docker push $DOCKER_USERNAME/automotive-ui:$TRAVIS_BUILD_ID
+
+    - cd store-locator
+    - mvn clean install -DskipTests -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+    #- sonar-scanner
+    - docker build -t $DOCKER_USERNAME/store-locator:$TRAVIS_BUILD_ID .
+    - docker push $DOCKER_USERNAME/store-locator:$TRAVIS_BUILD_ID
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+    
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id: $AWS_ACCESS_KEY_ID
+#   secret_access_key: $AWS_SECRET_ACCESS_KEY
+#   region: "AWS_DEFAULT_REGION"
+#   app: "automotive-app"
+#   env: "AutomotiveApp-env"
+#   bucket_name: "connected-vehicle-solutions-bucket"
