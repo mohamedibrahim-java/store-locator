@@ -20,8 +20,6 @@ Simply put, JUMBO-GEO is the perfect store locator to help your customers find y
 
 - **Use ANY Image for Your Maps** Upload any image and transforms it into an interactive map. Perfect for promotion ads in the store and customers who want to add videos directly to spicific store location with his/her own experience. 
 
-application that shows the 5 closest stores to a given position.
-
 ## **Requirements**
 
 Create an application that shows the 5 closest Jumbo stores to a given position.
