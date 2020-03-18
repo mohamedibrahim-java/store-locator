@@ -5,7 +5,6 @@ import static org.hamcrest.CoreMatchers.is;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
@@ -14,7 +13,6 @@ import io.restassured.RestAssured;
 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
 public class StoreLocatorControllerTest {
 
-	@Value("${server.port}")
 	int port = 80;
 
 	@Before
@@ -32,6 +30,6 @@ public class StoreLocatorControllerTest {
 	@Test
 	public void givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect() {
 		given().when().get("/store-locator-service/api/v1/stores/?longitude=6.245829&latitude=51.874272").then()
-				.statusCode(200).body("size()", is(5));
+				.statusCode(200).assertThat().body("size()", is(5));
 	}
 }
