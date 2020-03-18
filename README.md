@@ -34,6 +34,10 @@ There are just a few rules:
   
 # **Solution Architecture Overview**
 
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/architecture.png" width="800">
+</p>
+
 # **Functional services**
 
 **Stores Locator service**
