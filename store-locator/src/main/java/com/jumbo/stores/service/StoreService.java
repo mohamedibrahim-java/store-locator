@@ -7,7 +7,7 @@ import com.jumbo.stores.dto.StoreDTO;
 
 public interface StoreService {
 
-	void addStore(StoreDTO storeDTO);
+	Optional<StoreDTO> addStore(StoreDTO storeDTO);
 
 	Optional<List<StoreDTO>> findStoresNearbyTo(double longitude, double latitude, int limit);
 

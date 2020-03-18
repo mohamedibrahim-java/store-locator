@@ -29,9 +29,10 @@ public class StoreServiceImpl implements StoreService {
 	private StoreMapper storeMapper;
 
 	@Override
-	public void addStore(StoreDTO storeDTO) {
+	public Optional<StoreDTO> addStore(StoreDTO storeDTO) {
 
-		storeRepository.save(storeMapper.convertToEntity(storeDTO));
+		return Optional
+				.ofNullable(storeMapper.convertToDto(storeRepository.save(storeMapper.convertToEntity(storeDTO))));
 	}
 
 	@Override
