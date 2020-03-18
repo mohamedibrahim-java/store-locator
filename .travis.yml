@@ -24,7 +24,7 @@ script:
     - cd store-locator-ui
     - docker build -t store-locator-ui .
     - docker images
-    - docker tag store-locator-ui  $DOCKER_USERNAME/store-locator-ui
+    - docker tag store-locator-ui  $DOCKER_USERNAME/store-locator-ui:$TRAVIS_BUILD_ID
     # - docker push $DOCKER_USERNAME/travis-ci-build-stages-demo
     # - docker build -t $DOCKER_USERNAME/store-locator-ui:$TRAVIS_BUILD_ID .
     - docker push $DOCKER_USERNAME/store-locator-ui:$TRAVIS_BUILD_ID
