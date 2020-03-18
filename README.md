@@ -34,13 +34,15 @@ Purpose: retrieve store details and register/update store data.
 
 # **Application Swagger-UI**
 <p align="center">
-<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-url.jpg" width="800">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-url.png" width="800">
 </p>
 
 <p align="center">
-<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-model.jpg" width="800">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/store-locator-model.png" width="800">
 </p>
+
 # **DevOps Overview**
+
 One of the vital practices in software development lifecycle is DevOps which is mainly designed to building and delivering software products in a more rapidly and reliability fashion.
 
 It simplifies provisioning and managing infrastructure deploying application code, automate software release processes as well as monitoring the application and infrastructure performance.
@@ -52,3 +54,7 @@ Here is an example of what we are going to follow to produce our product in an a
 3) Codecov/SonarQube playing a role of empowering code reliability, security, and maintainability along with incentivizing developers to write tests and increase code coverage.
 4) Docker/DockerHub which is being used widely as the main platform for digital transformation by enabling organizations to seamlessly build, share and run an application by packaging software into standardized units for shipment and deployment.
 5) AWS will be used as the main cloud provider that offers reliable and scalable computing services in the cloud at affordable prices.
+
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/automation.jpg" width="800">
+</p>
