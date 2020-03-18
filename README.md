@@ -1,8 +1,24 @@
-# **Store-locator**
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/71db39a2184845d9b9873484eedcbfe2)](https://app.codacy.com/manual/mohamedibrahim-java/store-locator?utm_source=github.com&utm_medium=referral&utm_content=mohamedibrahim-java/store-locator&utm_campaign=Badge_Grade_Settings)
 
 [![Build Status](https://travis-ci.org/mohamedibrahim-java/store-locator.svg?branch=master)](https://travis-ci.org/mohamedibrahim-java/store-locator.svg?branch=master)
+
+# **JUMBO GEO**
+**The Ultimate MAPs for Customers**
+
+Simply put, JUMBO-GEO is the perfect store locator to help your customers find your products in a spot instantly.
+
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/main.jpeg" width="800">
+</p>
+
+## **Ultimate Business features**
+
+- **Store Locator, Product Locator, and More** Help your customers find your products with the perfect store locator, showcase a conference, or capture travels exactly where they occurred. 
+
+- **Complete Control Over Your Maps** You'll get the most powerful mapping features available. Style your map, add a video & photo gallery to each location, and add unlimited locations to each map. 
+
+- **Use ANY Image for Your Maps** Upload any image and transforms it into an interactive map. Perfect for promotion ads in the store and customers who want to add videos directly to spicific store location with his/her own experience. 
 
 application that shows the 5 closest stores to a given position.
 
