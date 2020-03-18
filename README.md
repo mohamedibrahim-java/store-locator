@@ -2,6 +2,8 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/71db39a2184845d9b9873484eedcbfe2)](https://app.codacy.com/manual/mohamedibrahim-java/store-locator?utm_source=github.com&utm_medium=referral&utm_content=mohamedibrahim-java/store-locator&utm_campaign=Badge_Grade_Settings)
 
+[![Build Status](https://travis-ci.org/mohamedibrahim-java/store-locator.svg?branch=master)](https://travis-ci.org/mohamedibrahim-java/store-locator.svg?branch=master)
+
 application that shows the 5 closest stores to a given position.
 
 ## **Requirements**
