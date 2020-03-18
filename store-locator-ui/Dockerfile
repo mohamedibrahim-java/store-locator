@@ -2,6 +2,8 @@
 FROM node:12.2.0-alpine  AS builder
 WORKDIR /app
 COPY . .
+# To handle 'not get uid/gid'
+RUN npm config set unsafe-perm true
 RUN npm install react-scripts -g --silent
 RUN yarn install
 RUN yarn run build
