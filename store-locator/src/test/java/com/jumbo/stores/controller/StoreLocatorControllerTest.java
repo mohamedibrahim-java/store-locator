@@ -38,16 +38,17 @@ public class StoreLocatorControllerTest {
 
 	@Test
 	public void givenUrl_whenSuccessOnGetsResponseAndResultSize_thenCorrect() {
-		given().when().get("/store-locator-service/api/v1/stores/?longitude=6.245829&latitude=51.874272").then()
-				.statusCode(200).assertThat().body("size()", IsEqual.equalTo(5));
+		given().queryParam("longitude", "6.245829").queryParam("latitude", "51.874272").when()
+				.get("/store-locator-service/api/v1/stores/").then().statusCode(200).assertThat()
+				.body("size()", IsEqual.equalTo(5));
 	}
 
 	@Test
 	public void givenUrl_whenSuccessOnGetsResponseAndResultShouldHaveData_thenCorrect() {
 
-		StoreDTO[] stores = given().when()
-				.get("/store-locator-service/api/v1/stores/?longitude=6.245829&latitude=51.874272").then().assertThat()
-				.statusCode(HttpStatus.OK.value()).extract().as(StoreDTO[].class);
+		StoreDTO[] stores = given().queryParam("longitude", "6.245829").queryParam("latitude", "51.874272").when()
+				.get("/store-locator-service/api/v1/stores/").then().assertThat().statusCode(HttpStatus.OK.value())
+				.extract().as(StoreDTO[].class);
 		assertThat(Arrays.asList(stores), hasItem(allOf(Matchers.<StoreDTO>hasProperty("longitude", is(6.296354)),
 				Matchers.<StoreDTO>hasProperty("latitude", is(51.969476)))));
 	}
