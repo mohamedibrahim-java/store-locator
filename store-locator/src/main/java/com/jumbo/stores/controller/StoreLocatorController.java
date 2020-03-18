@@ -65,7 +65,7 @@ public class StoreLocatorController {
 	}
 
 	@GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Get all near by stores ")
+	@ApiOperation(value = "Get all stores ")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Successfully retrieved all stores") })
 	public ResponseEntity<List<StoreDTO>> getAllStores() {
 
