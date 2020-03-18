@@ -68,3 +68,11 @@ Here is an example of what we are going to follow to produce our product in an a
 <p align="center">
 <img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/automation.jpg" width="800">
 </p>
+
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/dockerhub.png.png" width="800">
+</p>
+
+<p align="center">
+<img src="https://github.com/mohamedibrahim-java/store-locator/blob/master/img/travisci.png.png" width="800">
+</p>
